@@ -1,2 +1,3 @@
-# Jmeter_Assurity
-Jmeter Assignment
+# Jmeter_Assurity Project
+Date Created: 07-06-2026
+Description: Jmeter Assignment for Senior Performance Engineer Role
