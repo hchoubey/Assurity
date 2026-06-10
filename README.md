@@ -8,16 +8,18 @@ This repository contains the performance and load testing suites built with [Apa
 
 ## 📂 Project Structure
 
-```text
+```Assurity
 ├── Scripts/
-│   └── Jmeter_AssuritySPE.jmx     # Primary JMeter test plan
+│   └── Jmeter_AssuritySPE.jmx                          # Primary JMeter test plan
 ├── Config/
-│   └── user.properties            # Environment-specific variables
+│   └── user.properties                                 # Environment-specific variables
 ├── Test_Data/
-│   └── users.csv                  # Test data parameters
-├── Test_Results/                  # Local execution targets
-│
-└── README.md                      # Documentation
+│   └── users.csv                                       # Test data parameters
+├── Test_Results/                                       # Local execution targets
+│   └── Test_Results.jtl                                # Test results files.
+│   └── Test_Response_Captured_Parameters.csv           # Capture parameters files.
+│   └── Test_Results_HTML Folder                        # HTML report.
+└── README.md                                           # Documentation
 ```
 
 ## 🛠️ Prerequisites
