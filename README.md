@@ -83,12 +83,16 @@ jmeter -n -t "..\..\Assurity\Scripts\Jmeter_AssuritySPE.jmx" -q "..\..\Assurity\
 del /q /f /s "..\..\Test_Results\*"
 
 ```
+📈 Perfomance Test Report
 
 ### How to Access Reports
 1. Navigate to the "<FolderPath>\Assurity\Test_Results\Test_Results_HTML".
 2. View html file for local graphic charts and breakdown matrices in any browser.
 3. Performance Report & observations from the last test execution run are as below.
-
+ - Assumptions:
+        . Add this to Jmeter.properties files:
+                  # Print field names as first line in CSV
+                  jmeter.save.saveservice.print_field_names=true
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
