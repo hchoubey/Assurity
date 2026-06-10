@@ -70,17 +70,28 @@ jmeter -n -t ./scripts/main_load_test.jmx -l ./results/output.jtl \
 
 ### Examples of CLI runlines: 
 
-  -- Basic command line for running the test. Download the folder and replace the [MainFolderPath] in following command line.
-jmeter -n -t "[MainFolderPath]\Assurity\Scripts\Jmeter_AssuritySPE.jmx" -q "[MainFolderPath]\Assurity\Config\user.properties" -l "[MainFolderPath]\Assurity\Test_Results\Test_Results.jtl"
+    1. Basic Execution
+Download the project folder and replace `<MainFolderPath>` with your absolute local path:
+```bash
+jmeter -n -t "<MainFolderPath>\Assurity\Scripts\Jmeter_AssuritySPE.jmx" -q "<MainFolderPath>\Assurity\Config\user.properties" -l "<MainFolderPath>\Assurity\Test_Results\Test_Results.jtl"
+```
 
-  -- For absolute path use this commandline. Download the folder and replace the [MainFolderPath] in following command line.
-jmeter -n -t "[MainFolderPath]\Assurity\Scripts\Jmeter_AssuritySPE.jmx" -q "[MainFolderPath]\Assurity\Config\user.properties" -l "[MainFolderPath]\Assurity\Test_Results\Test_Results.jtl" -e -o "<Folder>\Assurity\Test_Results\Test_Results_HTML" -Jthreads=5 -Jrampup=5 -Jduration=120 -JTPS=0.1
+    2. Absolute Path Execution (With Custom Load Parameters)
+Download the project folder and replace `<MainFolderPath>` to run the test with overridden thread and duration configurations:
+```bash
+jmeter -n -t "<MainFolderPath>\Assurity\Scripts\Jmeter_AssuritySPE.jmx" -q "<MainFolderPath>\Assurity\Config\user.properties" -l "<MainFolderPath>\Assurity\Test_Results\Test_Results.jtl" -e -o "\Assurity\Test_Results\Test_Results_HTML" -Jthreads=5 -Jrampup=5 -Jduration=120 -JTPS=0.1
+```
 
-  -- For relative path use this commandline. Download the folder navigate to "..\apache-jmeter-4.0\bin" folder before running the following command line.
-jmeter -n -t "..\..\Assurity\Scripts\Jmeter_AssuritySPE.jmx" -q "..\..\Assurity\Config\user.properties" -l "..\..\Assurity\Test_Results\Test_Results.jtl" -e -o "..\..\Assurity\Test_Results\Test_Results_HTML" -Jthreads=5 -Jrampup=5 -Jduration=60 -JTPS=0.167
+    3. Relative Path Execution
+Download the project folder, open your command line, and navigate (`cd`) into your local `..\apache-jmeter-4.0\bin` directory before running:
+```bash
+jmeter -n -t "....\Assurity\Scripts\Jmeter_AssuritySPE.jmx" -q "....\Assurity\Config\user.properties" -l "....\Assurity\Test_Results\Test_Results.jtl" -e -o "....\Assurity\Test_Results\Test_Results_HTML" -Jthreads=5 -Jrampup=5 -Jduration=60 -JTPS=0.167
+```
 
-  -- Clear the Results folder.
-del /q /f /s "..\..\Test_Results\*"
+    4. Clean Up Utility
+Run this command to clear out old files from the results folder before starting a fresh run:
+```bash
+del /q /f /s "....\Test_Results\*"
 
 ```
 📈 Perfomance Test Report
