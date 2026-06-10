@@ -9,8 +9,6 @@ This repository contains the performance and load testing suites built with [Apa
 ## 📂 Project Structure
 
 ```text
-├── apache-jmeter-4.0
-│   └── Jmeter files		    # Jmeter Setup
 ├── Scripts/
 │   └── Jmeter_AssuritySPE.jmx     # Primary JMeter test plan
 ├── Config/
