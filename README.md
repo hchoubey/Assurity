@@ -70,8 +70,8 @@ jmeter -n -t ./scripts/main_load_test.jmx -l ./results/output.jtl \
 
 ### Examples of CLI runlines: 
 
-  -- Basic command line for running the test. Download the folder and replace the <FolderPath> in following command line.
-jmeter -n -t "<FolderPath>\Assurity\Scripts\Jmeter_AssuritySPE.jmx" -q "<FolderPath>\Assurity\Config\user.properties" -l "<FolderPath>\Assurity\Test_Results\Test_Results.jtl"
+  -- Basic command line for running the test. Download the folder and replace the FolderPath in following command line.
+jmeter -n -t "FolderPath\Assurity\Scripts\Jmeter_AssuritySPE.jmx" -q "FolderPath\Assurity\Config\user.properties" -l "FolderPath\Assurity\Test_Results\Test_Results.jtl"
 
   -- For absolute path use this commandline. Download the folder and replace the <FolderPath> in following command line.
 jmeter -n -t "<FolderPath>\Assurity\Scripts\Jmeter_AssuritySPE.jmx" -q "<FolderPath>\Assurity\Config\user.properties" -l "<FolderPath>\Assurity\Test_Results\Test_Results.jtl" -e -o "<Folder>\Assurity\Test_Results\Test_Results_HTML" -Jthreads=5 -Jrampup=5 -Jduration=120 -JTPS=0.1
